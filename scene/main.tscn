@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdma1b6nonwdy"]
+
+[ext_resource type="Script" path="res://script/main.gd" id="1_t2fxw"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_t2fxw")
+
+[node name="Title" type="Label" parent="."]
+offset_left = 413.0
+offset_top = 43.0
+offset_right = 660.0
+offset_bottom = 144.0
+theme_override_font_sizes/font_size = 60
+text = "数织求解器"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SolveMode" type="Button" parent="."]
+offset_left = 466.0
+offset_top = 286.0
+offset_right = 637.0
+offset_bottom = 336.0
+theme_override_font_sizes/font_size = 30
+text = "求解模式"
+
+[node name="EditMode" type="Button" parent="."]
+offset_left = 465.0
+offset_top = 349.0
+offset_right = 636.0
+offset_bottom = 399.0
+theme_override_font_sizes/font_size = 30
+text = "编辑模式"
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 467.0
+offset_top = 413.0
+offset_right = 638.0
+offset_bottom = 463.0
+theme_override_font_sizes/font_size = 30
+text = "退出"
+
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

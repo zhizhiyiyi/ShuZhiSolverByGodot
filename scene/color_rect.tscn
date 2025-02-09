@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgeor0r4woaye"]
+
+[ext_resource type="Script" path="res://script/color_rect.gd" id="1_qc0af"]
+
+[node name="ColorRect" type="ColorRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_qc0af")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
